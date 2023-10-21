@@ -15,7 +15,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl" backgroundColor="#4d94ff">
+    <Box textAlign="center" fontSize="xl" backgroundColor="#E07A5F">
       <Text fontSize='4xl' as='b' color="#333333">MatchAbility</Text>
       <Tabs variant='soft-rounded' colorScheme='red'>
         <TabList>
