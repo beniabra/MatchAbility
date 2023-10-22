@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/MatchAbility/static/js/main.9aa5fa1b.js",
+    "main.js": "/MatchAbility/static/js/main.a7721437.js",
     "static/js/787.28cb0dcd.chunk.js": "/MatchAbility/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/MatchAbility/index.html",
-    "main.9aa5fa1b.js.map": "/MatchAbility/static/js/main.9aa5fa1b.js.map",
+    "main.a7721437.js.map": "/MatchAbility/static/js/main.a7721437.js.map",
     "787.28cb0dcd.chunk.js.map": "/MatchAbility/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9aa5fa1b.js"
+    "static/js/main.a7721437.js"
   ]
 }
