@@ -78,6 +78,7 @@ export function VolunteerDisplay(): JSX.Element {
                 I can help with: {volunteer.disabilities.join(", ")}
               </p>
               <p>Availability: {volunteer.availability}</p>
+              <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
             </CardBody>
             <CardFooter>
               <Button>Match me</Button>

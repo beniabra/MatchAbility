@@ -13,7 +13,7 @@ import {
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-import { Grid, GridItem } from '@chakra-ui/react'
+import { GridItem } from '@chakra-ui/react'
 import { VolunteerDisplay } from "./components/VolunteerDisplay"
 import { MatchMakingForm } from "./components/MatchMakingForm"
 import { Home } from "./components/Home"
