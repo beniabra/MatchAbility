@@ -6,7 +6,7 @@
     Warning: Each child in a list should have a unique "key" prop.
     
     Check the render method of `VolunteerDisplay`. See https://reactjs.org/link/warning-keys for more information.
-        at Card2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/card/src/card.tsx:43:18)
+        at /home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/tag/src/tag.tsx:32:18
         at VolunteerDisplay (/home/runner/work/MatchAbility/MatchAbility/src/components/VolunteerDisplay.tsx:31:47)
         at div
         at /home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
@@ -38,20 +38,22 @@
         at ChakraProvider2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
         at AllProviders (/home/runner/work/MatchAbility/MatchAbility/src/test-utils.tsx:5:25)
 
-      73 |     <div>
-      74 |       {/* Volunteer Display */}
-    > 75 |       <SimpleGrid columns={4} spacing={10}>
-         |       ^
-      76 |         {volunteers.map(volunteer => (
-      77 |           <Card>
-      78 |             <CardHeader>
+      82 |             <CardBody>
+      83 |               <p>{volunteer.bio}</p>
+    > 84 |               <p>I can help with: { volunteer.disabilities.map(disability => <Tag>{disability}</Tag>) }</p>
+         |               ^
+      85 |               <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
+      86 |               <p>Availability: {volunteer.availability.join(", ")}</p>
+      87 |             </CardBody>
 
       at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:87:30)
       at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:61:7)
       at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1078:5)
       at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1105:11)
-      at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1276:11)
-      at VolunteerDisplay (src/components/VolunteerDisplay.tsx:75:7)
+      at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1266:15)
+      at map (src/components/VolunteerDisplay.tsx:84:15)
+          at Array.map (<anonymous>)
+      at VolunteerDisplay (src/components/VolunteerDisplay.tsx:76:21)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:16305:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20074:13)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21587:16)
@@ -73,7 +75,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (728 ms)
+  ✕ renders learn react link (607 ms)
 
   ● renders learn react link
 
@@ -196,6 +198,17 @@ FAIL src/App.test.tsx
                     [36m<div[39m
                       [33mclass[39m=[32m"chakra-card css-jv498s"[39m
                     [36m>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"chakra-avatar css-1q6qhgs"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33maria-label[39m=[32m"Alice Walker"[39m
+                          [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
+                          [33mrole[39m=[32m"img"[39m
+                        [36m>[39m
+                          [0mAW[0m
+                        [36m</div>[39m
+                      [36m</span>[39m
                       [36m<div[39m
                         [33mclass[39m=[32m"chakra-card__header css-1sl53ol"[39m
                       [36m>[39m
@@ -211,11 +224,18 @@ FAIL src/App.test.tsx
                         [36m<p>[39m
                           [0mI love sunflowers.[0m
                         [36m</p>[39m
-                        [36m<p[39m
-                          [33mstyle[39m=[32m"align-self: left;"[39m
-                        [36m>[39m
+                        [36m<p>[39m
                           [0mI can help with: [0m
-                          [0mDyslexia, Colorblindness[0m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"css-1eveppl"[39m
+                          [36m>[39m
+                            [0mDyslexia[0m
+                          [36m</span>[39m
+                          [36m<span[39m
+                            [33mclass[39m=[32m"css-1eveppl"[39m
+                          [36m>[39m
+                            [0mBlindness[0m
+                          [36m</span>[39m
                         [36m</p>[39m
                         [36m<p>[39m
                           [0mDays Available: [0m
@@ -230,26 +250,7 @@ FAIL src/App.test.tsx
                         [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
                       [36m>[39m
                         [36m<button[39m
-                          [33mclass[39m=[32m"chakra-button css-ez23ye"[39m
-                          [33mtype[39m=[32m"button"[39m
-                        [36m>[39m
-                          [0mMatch me[0m
-                        [36m</button>[39m
-                      [36m</div>[39m
-                    [36m</div>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"chakra-card css-jv498s"[39m
-                    [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__header css-1sl53ol"[39m
-                      [36m>[39m
-                        [36m<h2[39m
-                          [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
-                        [36m>[39m
-                          [0mBenjamin Abraham[0m
-                        [36m</h2>[39m
-                      [36m</div>[39m
-                ...
+                          [33mclass[39m=[32m"chakra-butto...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -272,7 +273,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   18.96 |        0 |    15.9 |   19.46 |                   
+All files               |   19.65 |        0 |   17.77 |   20.17 |                   
  src                    |    8.57 |        0 |   13.04 |    8.69 |                   
   App.tsx               |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
@@ -281,11 +282,11 @@ All files               |   18.96 |        0 |    15.9 |   19.46 |
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/components         |   36.36 |        0 |   21.05 |   38.09 |                   
+ src/components         |   37.77 |        0 |      25 |   39.53 |                   
   Home.tsx              |     100 |      100 |     100 |     100 |                   
   MatchMakingForm.tsx   |      50 |      100 |   16.66 |   54.54 | 24-25,39-49       
   Profile.tsx           |       0 |      100 |       0 |       0 | 4                 
-  VolunteerDisplay.tsx  |      30 |        0 |   18.18 |   31.03 | 39-69,100-141     
+  VolunteerDisplay.tsx  |   32.25 |        0 |      25 |   33.33 | 39-69,99-141      
  src/interfaces         |       0 |        0 |       0 |       0 |                   
   volunteers.ts         |       0 |        0 |       0 |       0 |                   
  src/pages              |       0 |      100 |       0 |       0 |                   
@@ -295,7 +296,7 @@ All files               |   18.96 |        0 |    15.9 |   19.46 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.543 s
+Time:        3.608 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
