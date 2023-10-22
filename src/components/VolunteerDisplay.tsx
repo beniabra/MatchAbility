@@ -2,7 +2,7 @@
 import React, {useState} from "react"
 import {Volunteers} from "../interfaces/volunteers";
 import volunteersdata from "../volunteers.json";
-import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Heading,Grid, GridItem, Button, Avatar }from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Heading,Grid, GridItem, Button, Avatar, Tag }from '@chakra-ui/react'
 
 export const {VOLUNTEERS}: Record<string, Volunteers[]> =
     volunteersdata as Record<string, Volunteers[]>;
@@ -25,9 +25,9 @@ export function VolunteerDisplay(): JSX.Element {
                     <CardHeader>
                         <Heading size='md'> { volunteer.name }</Heading>
                     </CardHeader>
-                    <CardBody>
+                    <CardBody style={{ textAlign: 'left' }}>
                         <p>{ volunteer.bio }</p>
-                        <p style={{alignSelf: "left"}}>I can help with: { volunteer.disabilities.join(", ") }</p>
+                        <p>I can help with: { volunteer.disabilities.map(disability => <Tag colorScheme='gold'>{disability}</Tag>) }</p>
                         <p>Availability: { volunteer.availability }</p>
                     </CardBody>
                     <CardFooter>
