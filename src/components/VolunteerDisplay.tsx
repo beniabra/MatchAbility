@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Volunteers } from "../interfaces/volunteers";
 import volunteersdata from "../volunteers.json";
+
 import {
   Card,
   CardHeader,
@@ -15,8 +16,11 @@ import {
   CheckboxGroup,
   Checkbox,
   Select,
-  Button
+  Button,
+  Avatar,
+  Tag
 } from "@chakra-ui/react";
+
 
 export const { VOLUNTEERS }: Record<string, Volunteers[]> =
   volunteersdata as Record<string, Volunteers[]>;

@@ -4,50 +4,57 @@
             "id": 100,
             "name":  "Alice Walker",
             "bio": "I love sunflowers.",
-            "disabilities": ["dyslexia", "colorblindness"],
-            "availability": "Mon-Fri anytime"
+            "disabilities": ["Dyslexia", "Colorblindness"],
+            "days available": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+            "availability": ["Evening"]
         },
         {
             "id": 101,
             "name":  "Benjamin Abraham",
             "bio": "Really into musical theater and helping the community",
-            "disabilities": ["mobility"],
-            "availability": "Sat or Sun"
+            "disabilities": ["Mobility"],
+            "days available": ["Sat", "Sun"],
+            "availability": ["Morning", "Afternoon", "Evening"]
         },
         {
             "id": 102,
             "name":  "Cathie Yang",
             "bio": "I am a software engineer with a passion for helping others.",
-            "disabilities": ["dyslexia", "colorblindness"],
-            "availability": "Weekends"
+            "disabilities": ["Dyslexia", "Colorblindness"],
+            "days available": ["Mon", "Wed", "Fri"],
+            "availability": ["Morning", "Afternoon"]
         },
         {
             "id": 103,
             "name": "Maria Rodriguez",
             "bio": "I'm a nurse with experience in emergency medicine.",
             "disabilities": ["Hearing Impairment / Deafness"],
-            "availability": "Evenings"
+            "days available": ["Tue", "Thu"],
+            "availability": ["Morning"]
         },
         {
             "id": 104,
             "name": "Ahmed Khan",
             "bio": "I am a teacher and enjoy working with children.",
             "disabilities": ["Mobility"],
-            "availability": "Weekdays"
+            "days available": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+            "availability": ["Afternoon", "Evening"]
         },
         {
             "id": 105,
             "name": "Linda Johnson",
             "bio": "I am a retired psychologist looking to give back to the community.",
             "disabilities": ["Blind"],
-            "availability": "Flexible"
+            "days available": ["Sat", "Sun"],
+            "availability": ["Afternoon", "Morning", "Evening"]
         },
         {
             "id": 5,
             "name": "Carlos Gomez",
             "bio": "I am a graphic designer who enjoys creative projects.",
             "disabilities": ["Dyslexia"],
-            "availability": "Saturdays"
+            "days available": ["Fri","Sat", "Sun"],
+            "availability": ["Morning"]
         }
         
 
