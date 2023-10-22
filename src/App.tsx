@@ -16,6 +16,7 @@ import { Grid, GridItem } from '@chakra-ui/react'
 import { VolunteerDisplay } from "./components/VolunteerDisplay"
 import { MatchMakingForm } from "./components/MatchMakingForm"
 import { Home } from "./components/Home"
+import {About} from "./pages/About"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -43,6 +44,9 @@ export const App = () => (
           </TabPanel>
           <TabPanel>
             <MatchMakingForm></MatchMakingForm>
+          </TabPanel>
+          <TabPanel>
+            <About></About>
           </TabPanel>
         </TabPanels>
       </Tabs>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Volunteers } from "../interfaces/volunteers";
 import volunteersdata from "../volunteers.json";
-
+import {Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon,} from '@chakra-ui/react'
 import {
   Card,
   CardHeader,
@@ -71,83 +71,87 @@ export function VolunteerDisplay(): JSX.Element {
 
   return (
     <div>
-      {/* Volunteer Display */}
-      <SimpleGrid columns={4} spacing={10}>
-        {volunteers.map(volunteer => (
-          <Card>
-            <Avatar name={volunteer.name} src='https://bit.ly/broken-link"' />
-            <CardHeader>
-              <Heading size="md">{volunteer.name}</Heading>
-            </CardHeader>
-            <CardBody>
-              <p>{volunteer.bio}</p>
-              <p>I can help with: { volunteer.disabilities.map(disability => <Tag>{disability}</Tag>) }</p>
-              <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
-              <p>Availability: {volunteer.availability.join(", ")}</p>
-            </CardBody>
-            <CardFooter>
-              <Button>Match me</Button>
-            </CardFooter>
-          </Card>
-        ))}
-      </SimpleGrid>
+        <div style={{ margin: '30px' }}>
+        {/* Volunteer Display */}
+        <SimpleGrid columns={4} spacing={10}>
+            {volunteers.map(volunteer => (
+            <Card>
+                <Avatar name={volunteer.name} src='https://bit.ly/broken-link"' />
+                <CardHeader>
+                <Heading size="md">{volunteer.name}</Heading>
+                </CardHeader>
+                <CardBody>
+                <p>{volunteer.bio}</p>
+                <p>I can help with: { volunteer.disabilities.map(disability => <Tag>{disability}</Tag>) }</p>
+                <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
+                <p>Availability: {volunteer.availability.join(", ")}</p>
+                </CardBody>
+                <CardFooter>
+                <Button>Match me</Button>
+                </CardFooter>
+            </Card>
+            ))}
+        </SimpleGrid>
+        
+        <br></br>
+        <br></br>
+        {/* Registration Form */}
+        <form onSubmit={handleSubmit}>
+            <FormControl>
+            <FormLabel>Name:</FormLabel>
+            <Input value={name} onChange={(e) => setName(e.target.value)} />
+            </FormControl>
 
-      {/* Registration Form */}
-      <form onSubmit={handleSubmit}>
-        <FormControl>
-          <FormLabel>Name:</FormLabel>
-          <Input value={name} onChange={(e) => setName(e.target.value)} />
-        </FormControl>
+            <FormControl>
+            <FormLabel>Bio:</FormLabel>
+            <Textarea value={bio} onChange={(e) => setBio(e.target.value)} />
+            </FormControl>
 
-        <FormControl>
-          <FormLabel>Bio:</FormLabel>
-          <Textarea value={bio} onChange={(e) => setBio(e.target.value)} />
-        </FormControl>
-
-        <FormControl>
-          <FormLabel>Disabilities they can help with:</FormLabel>
-          <CheckboxGroup
-            value={disabilities}
-            onChange={(values) => setDisabilities(values as string[])}
-          >
-            {/* Assuming these are the options, you can add more */}
-            <Checkbox value="Blindness">Blindness</Checkbox>
-            <Checkbox value="Mobility">Mobility</Checkbox>
-            <Checkbox value="Hearing Impairment">Hearing Impairment</Checkbox>
-            <Checkbox value="Dyslexia">Dyslexia</Checkbox>
-          </CheckboxGroup>
-        </FormControl>
-
-        <FormControl>
-            <FormLabel>Days Available:</FormLabel>
+            <FormControl>
+            <FormLabel>Disabilities they can help with:</FormLabel>
             <CheckboxGroup
-                value={daysAvailable}
-                onChange={(values) => setDaysAvailable(values as string[])}
+                value={disabilities}
+                onChange={(values) => setDisabilities(values as string[])}
             >
-                <Checkbox value="Monday">Monday</Checkbox>
-                <Checkbox value="Tuesday">Tuesday</Checkbox>
-                <Checkbox value="Wednesday">Wednesday</Checkbox>
-                <Checkbox value="Thursday">Thursday</Checkbox>
-                <Checkbox value="Friday">Friday</Checkbox>
-                <Checkbox value="Saturday">Saturday</Checkbox>
-                <Checkbox value="Sunday">Sunday</Checkbox>
+                {/* Assuming these are the options, you can add more */}
+                <Checkbox value="Blindness">Blindness</Checkbox>
+                <Checkbox value="Mobility">Mobility</Checkbox>
+                <Checkbox value="Hearing Impairment">Hearing Impairment</Checkbox>
+                <Checkbox value="Dyslexia">Dyslexia</Checkbox>
             </CheckboxGroup>
-        </FormControl>
+            </FormControl>
 
-        <FormControl>
-            <FormLabel>Times they are available:</FormLabel>
-            <CheckboxGroup
-                value={availability}
-                onChange={(values) => setAvailability(values as string[])}
-            >
-                <Checkbox value="Morning">Morning</Checkbox>
-                <Checkbox value="Afternoon">Afternoon</Checkbox>
-                <Checkbox value="Evening">Evening</Checkbox>
-            </CheckboxGroup>
-        </FormControl>
+            <FormControl>
+                <FormLabel>Days Available:</FormLabel>
+                <CheckboxGroup
+                    value={daysAvailable}
+                    onChange={(values) => setDaysAvailable(values as string[])}
+                >
+                    <Checkbox value="Monday">Monday</Checkbox>
+                    <Checkbox value="Tuesday">Tuesday</Checkbox>
+                    <Checkbox value="Wednesday">Wednesday</Checkbox>
+                    <Checkbox value="Thursday">Thursday</Checkbox>
+                    <Checkbox value="Friday">Friday</Checkbox>
+                    <Checkbox value="Saturday">Saturday</Checkbox>
+                    <Checkbox value="Sunday">Sunday</Checkbox>
+                </CheckboxGroup>
+            </FormControl>
 
-        <Button type="submit">Register</Button>
-      </form>
+            <FormControl>
+                <FormLabel>Times they are available:</FormLabel>
+                <CheckboxGroup
+                    value={availability}
+                    onChange={(values) => setAvailability(values as string[])}
+                >
+                    <Checkbox value="Morning">Morning</Checkbox>
+                    <Checkbox value="Afternoon">Afternoon</Checkbox>
+                    <Checkbox value="Evening">Evening</Checkbox>
+                </CheckboxGroup>
+            </FormControl>
+            <br></br>
+            <Button type="submit">Register</Button>
+        </form>
+        </div>
     </div>
   );
 }
