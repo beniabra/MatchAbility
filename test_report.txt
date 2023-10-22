@@ -73,7 +73,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (627 ms)
+  ✕ renders learn react link (728 ms)
 
   ● renders learn react link
 
@@ -110,7 +110,7 @@ FAIL src/App.test.tsx
           [36m>[39m
             [36m<div[39m
               [33maria-orientation[39m=[32m"horizontal"[39m
-              [33mclass[39m=[32m"chakra-tabs__tablist css-1uw5bnh"[39m
+              [33mclass[39m=[32m"chakra-tabs__tablist css-hgtxdo"[39m
               [33mrole[39m=[32m"tablist"[39m
             [36m>[39m
               [36m<button[39m
@@ -163,21 +163,9 @@ FAIL src/App.test.tsx
                 [33mtabindex[39m=[32m"-1"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
-                [0mRegister[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33maria-controls[39m=[32m"tabs-:r0:--tabpanel-4"[39m
-                [33maria-disabled[39m=[32m"false"[39m
-                [33maria-selected[39m=[32m"false"[39m
-                [33mclass[39m=[32m"chakra-tabs__tab css-yf12il"[39m
-                [33mdata-index[39m=[32m"4"[39m
-                [33mid[39m=[32m"tabs-:r0:--tab-4"[39m
-                [33mrole[39m=[32m"tab"[39m
-                [33mtabindex[39m=[32m"-1"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
                 [0mAbout[0m
               [36m</button>[39m
+              [36m<br />[39m
             [36m</div>[39m
             [36m<div[39m
               [33mclass[39m=[32m"chakra-tabs__tab-panels css-at1bvb"[39m
@@ -248,6 +236,19 @@ FAIL src/App.test.tsx
                           [0mMatch me[0m
                         [36m</button>[39m
                       [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"chakra-card css-jv498s"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"chakra-card__header css-1sl53ol"[39m
+                      [36m>[39m
+                        [36m<h2[39m
+                          [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
+                        [36m>[39m
+                          [0mBenjamin Abraham[0m
+                        [36m</h2>[39m
+                      [36m</div>[39m
                 ...
 
        6 | test("renders learn react link", () => {
@@ -271,7 +272,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   19.65 |        0 |   17.77 |   20.17 |                   
+All files               |   18.96 |        0 |    15.9 |   19.46 |                   
  src                    |    8.57 |        0 |   13.04 |    8.69 |                   
   App.tsx               |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
@@ -280,11 +281,10 @@ All files               |   19.65 |        0 |   17.77 |   20.17 |
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/components         |   37.77 |        0 |      25 |   39.53 |                   
+ src/components         |   36.36 |        0 |   21.05 |   38.09 |                   
   Home.tsx              |     100 |      100 |     100 |     100 |                   
-  MatchMakingForm.tsx   |      50 |      100 |   16.66 |   54.54 | 23-24,34-43       
+  MatchMakingForm.tsx   |      50 |      100 |   16.66 |   54.54 | 24-25,39-49       
   Profile.tsx           |       0 |      100 |       0 |       0 | 4                 
-  Register.tsx          |     100 |      100 |     100 |     100 |                   
   VolunteerDisplay.tsx  |      30 |        0 |   18.18 |   31.03 | 39-69,100-141     
  src/interfaces         |       0 |        0 |       0 |       0 |                   
   volunteers.ts         |       0 |        0 |       0 |       0 |                   
@@ -295,7 +295,7 @@ All files               |   19.65 |        0 |   17.77 |   20.17 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.1 s
+Time:        4.543 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
