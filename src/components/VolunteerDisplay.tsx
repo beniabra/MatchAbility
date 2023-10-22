@@ -75,14 +75,13 @@ export function VolunteerDisplay(): JSX.Element {
       <SimpleGrid columns={4} spacing={10}>
         {volunteers.map(volunteer => (
           <Card>
+            <Avatar name={volunteer.name} src='https://bit.ly/broken-link"' />
             <CardHeader>
               <Heading size="md">{volunteer.name}</Heading>
             </CardHeader>
             <CardBody>
               <p>{volunteer.bio}</p>
-              <p style={{ alignSelf: "left" }}>
-                I can help with: {volunteer.disabilities.join(", ")}
-              </p>
+              <p>I can help with: { volunteer.disabilities.map(disability => <Tag>{disability}</Tag>) }</p>
               <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
               <p>Availability: {volunteer.availability.join(", ")}</p>
             </CardBody>
@@ -112,9 +111,10 @@ export function VolunteerDisplay(): JSX.Element {
             onChange={(values) => setDisabilities(values as string[])}
           >
             {/* Assuming these are the options, you can add more */}
-            <Checkbox value="disability1">Disability 1</Checkbox>
-            <Checkbox value="disability2">Disability 2</Checkbox>
-            <Checkbox value="disability3">Disability 3</Checkbox>
+            <Checkbox value="Blindness">Blindness</Checkbox>
+            <Checkbox value="Mobility">Mobility</Checkbox>
+            <Checkbox value="Hearing Impairment">Hearing Impairment</Checkbox>
+            <Checkbox value="Dyslexia">Dyslexia</Checkbox>
           </CheckboxGroup>
         </FormControl>
 
