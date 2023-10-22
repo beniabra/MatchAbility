@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (408 ms)
+  ✕ renders learn react link (279 ms)
 
   ● renders learn react link
 
@@ -213,7 +213,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |    7.59 |        0 |      10 |    7.69 |                   
+All files               |    7.22 |        0 |    9.37 |    7.31 |                   
  src                    |    8.57 |        0 |   13.04 |    8.69 |                   
   App.tsx               |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
@@ -222,12 +222,12 @@ All files               |    7.59 |        0 |      10 |    7.69 |
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/components         |       0 |      100 |       0 |       0 |                   
+ src/components         |       0 |        0 |       0 |       0 |                   
   Home.tsx              |       0 |      100 |       0 |       0 | 4                 
   MatchMakingForm.tsx   |       0 |      100 |       0 |       0 | 4                 
   Profile.tsx           |       0 |      100 |       0 |       0 | 4                 
   Register.tsx          |       0 |      100 |       0 |       0 | 4                 
-  VolunteerDisplay.tsx  |       0 |      100 |       0 |       0 | 6-10              
+  VolunteerDisplay.tsx  |       0 |        0 |       0 |       0 | 8-23              
  src/interfaces         |       0 |        0 |       0 |       0 |                   
   volunteers.ts         |       0 |        0 |       0 |       0 |                   
  src/pages              |       0 |      100 |       0 |       0 |                   
@@ -237,7 +237,7 @@ All files               |    7.59 |        0 |      10 |    7.69 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.153 s
+Time:        2.876 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
