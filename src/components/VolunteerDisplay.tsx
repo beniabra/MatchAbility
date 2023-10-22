@@ -2,7 +2,7 @@
 import React, {useState} from "react"
 import {Volunteers} from "../interfaces/volunteers";
 import volunteersdata from "../volunteers.json";
-import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Heading,Grid, GridItem, Button }from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Heading,Grid, GridItem, Button, Avatar }from '@chakra-ui/react'
 
 export const {VOLUNTEERS}: Record<string, Volunteers[]> =
     volunteersdata as Record<string, Volunteers[]>;
@@ -21,6 +21,7 @@ export function VolunteerDisplay(): JSX.Element {
         <SimpleGrid columns={4} spacing={10}>
             {volunteers.map(volunteer => (
                 <Card>
+                    <Avatar name={ volunteer.name } src='https://bit.ly/broken-link' />
                     <CardHeader>
                         <Heading size='md'> { volunteer.name }</Heading>
                     </CardHeader>
