@@ -16,7 +16,6 @@ import { Grid, GridItem } from '@chakra-ui/react'
 import { VolunteerDisplay } from "./components/VolunteerDisplay"
 import { MatchMakingForm } from "./components/MatchMakingForm"
 import { Home } from "./components/Home"
-import { Register } from "./components/Register"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -28,12 +27,12 @@ export const App = () => (
     </Grid>
             
       <Tabs variant='soft-rounded' colorScheme='red'>
-        <TabList>
+        <TabList paddingBottom="4">
           <Tab color="#333333">Home</Tab>
           <Tab color="#333333">Our Volunteers</Tab>
           <Tab color="#333333">MatchMaking Form</Tab>
-          <Tab color="#333333">Register</Tab>
           <Tab color="#333333">About</Tab>
+          <br></br>
         </TabList>
         <TabPanels backgroundColor="white">
           <TabPanel>
@@ -44,9 +43,6 @@ export const App = () => (
           </TabPanel>
           <TabPanel>
             <MatchMakingForm></MatchMakingForm>
-          </TabPanel>
-          <TabPanel>
-            <Register></Register>
           </TabPanel>
         </TabPanels>
       </Tabs>
