@@ -38,22 +38,22 @@
         at ChakraProvider2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
         at AllProviders (/home/runner/work/MatchAbility/MatchAbility/src/test-utils.tsx:5:25)
 
-      82 |             <CardBody>
-      83 |               <p>{volunteer.bio}</p>
-    > 84 |               <p>I can help with: { volunteer.disabilities.map(disability => <Tag>{disability}</Tag>) }</p>
-         |               ^
-      85 |               <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
-      86 |               <p>Availability: {volunteer.availability.join(", ")}</p>
-      87 |             </CardBody>
+      83 |                 <CardBody>
+      84 |                 <p>{volunteer.bio}</p>
+    > 85 |                 <p>I can help with: { volunteer.disabilities.map(disability => <Tag>{disability}</Tag>) }</p>
+         |                 ^
+      86 |                 <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
+      87 |                 <p>Availability: {volunteer.availability.join(", ")}</p>
+      88 |                 </CardBody>
 
       at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:87:30)
       at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:61:7)
       at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1078:5)
       at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1105:11)
       at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1266:15)
-      at map (src/components/VolunteerDisplay.tsx:84:15)
+      at map (src/components/VolunteerDisplay.tsx:85:17)
           at Array.map (<anonymous>)
-      at VolunteerDisplay (src/components/VolunteerDisplay.tsx:76:21)
+      at VolunteerDisplay (src/components/VolunteerDisplay.tsx:77:25)
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:16305:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20074:13)
       at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21587:16)
@@ -75,7 +75,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (679 ms)
+  ✕ renders learn react link (648 ms)
 
   ● renders learn react link
 
@@ -182,52 +182,61 @@ FAIL src/App.test.tsx
                 [36m<div[39m
                   [33mstyle[39m=[32m"margin: 30px;"[39m
                 [36m>[39m
-                  [36m<h1>[39m
-                    [36m<b>[39m
-                      [0mWelcome to Matchability, our Volunteer Matching Service[0m
-                    [36m</b>[39m
-                  [36m</h1>[39m
-                  [36m<p>[39m
-                    [0mFind volunteers who can help with disabilities.[0m
-                  [36m</p>[39m
                   [36m<br />[39m
                   [36m<div[39m
-                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: rgb(245, 245, 245);"[39m
+                    [33mclass[39m=[32m"sc-bdnyFh bjwppf"[39m
                   [36m>[39m
-                    [36m<h2[39m
-                      [33mstyle[39m=[32m"font-size: 1.5rem; color: rgb(51, 51, 51);"[39m
+                    [36m<h1[39m
+                      [33mclass[39m=[32m"sc-gtsqUy bQMQgs"[39m
                     [36m>[39m
-                      [0mVisual Impairments[0m
-                    [36m</h2>[39m
-                    [36m<p[39m
-                      [33mstyle[39m=[32m"font-size: 1rem; color: rgb(85, 85, 85); line-height: 1.4;"[39m
-                    [36m>[39m
-                      [0mVisual impairments encompass a range of conditions that affect a person's vision. These conditions can vary from mild to severe and can include blindness, low vision, and color blindness. People with visual impairments often use tools like braille, screen readers, and white canes to navigate and access information. It's essential to provide accessible content and environments to accommodate their needs.[0m
+                      [0mWelcome to Matchability, our Volunteer Matching Service[0m
+                    [36m</h1>[39m
+                    [36m<p>[39m
+                      [0mFind volunteers who can help with disabilities.[0m
                     [36m</p>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: rgb(245, 245, 245);"[39m
-                  [36m>[39m
-                    [36m<h2[39m
-                      [33mstyle[39m=[32m"font-size: 1.5rem; color: rgb(51, 51, 51);"[39m
+                    [36m<br />[39m
+                    [36m<section[39m
+                      [33mclass[39m=[32m"sc-dlniIP cCfvcq"[39m
                     [36m>[39m
-                      [0mHearing Impairments[0m
-                    [36m</h2>[39m
-                    [36m<p[39m
-                      [33mstyle[39m=[32m"font-size: 1rem; color: rgb(85, 85, 85); line-height: 1.4;"[39m
+                      [36m<h2[39m
+                        [33mclass[39m=[32m"sc-hKFymg fdEOZS"[39m
+                      [36m>[39m
+                        [0mOur Mission[0m
+                      [36m</h2>[39m
+                      [36m<p>[39m
+                        [0mAt MatchAbility, we believe in a world where everyone, regardless of ability, can navigate life seamlessly. Our mission is to connect individuals with disabilities to a community of compassionate helpers ready to assist in a variety of ways.[0m
+                      [36m</p>[39m
+                    [36m</section>[39m
+                    [36m<section[39m
+                      [33mclass[39m=[32m"sc-dlniIP cCfvcq"[39m
                     [36m>[39m
-                      [0mHearing impairments involve difficulties with hearing or complete deafness. Individuals with hearing impairments may communicate using sign language, lip-reading, or hearing aids. Providing closed captions, sign language interpreters, and assistive listening systems can make information and events more accessible to the Deaf and hard of hearing community.[0m
-                    [36m</p>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: rgb(245, 245, 245);"[39m
-                  [36m>[39m
-                    [36m<h2[39m
-                      [33mstyle[39m=[32m"font-size: 1.5rem; color: rgb(51, 51, 51);"[39m
+                      [36m<h2[39m
+                        [33mclass[39m=[32m"sc-hKFymg fdEOZS"[39m
+                      [36m>[39m
+                        [0mWho We Are[0m
+                      [36m</h2>[39m
+                      [36m<p>[39m
+                        [0mBorn out of a desire to bridge the gap between those who need assistance and those willing to offer a helping hand, Matchability has grown into a trusted platform where connections are made every day. Whether it's guiding someone in a wheelchair around town, interpreting sign language for the hearing-impaired, or providing note-taking support for someone with dyslexia, we ensure that help is just a click away.[0m
+                      [36m</p>[39m
+                    [36m</section>[39m
+                    [36m<section[39m
+                      [33mclass[39m=[32m"sc-dlniIP cCfvcq"[39m
                     [36m>[39m
-                      [0mMobility Impairments[0m
-                    [36m</h2>[39m
-                    [36...
+                      [36m<h2[39m
+                        [33mclass[39m=[32m"sc-hKFymg fdEOZS"[39m
+                      [36m>[39m
+                        [0mOur Services[0m
+                      [36m</h2>[39m
+                      [36m<ul[39m
+                        [33mclass[39m=[32m"sc-eCAqax kfksaM"[39m
+                      [36m>[39m
+                        [36m<li[39m
+                          [33mclass[39m=[32m"sc-jSFipO bQwzUP"[39m
+                        [36m>[39m
+                          [36m<strong>[39m
+                            [0mMobility Assistance[0m
+                          [36m</strong>[39m
+                          [0m: Navigating the world can be challenging for some. Our dedicated assistants provide hands-on support, en...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -250,7 +259,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   21.66 |        0 |   17.77 |   22.22 |                   
+All files               |   26.98 |        0 |   20.45 |   27.64 |                   
  src                    |    8.57 |        0 |   13.04 |    8.69 |                   
   App.tsx               |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
@@ -259,21 +268,20 @@ All files               |   21.66 |        0 |   17.77 |   22.22 |
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/components         |   41.66 |        0 |      25 |   43.47 |                   
+ src/components         |   46.15 |        0 |      25 |      48 |                   
   Home.tsx              |     100 |      100 |     100 |     100 |                   
   MatchMakingForm.tsx   |      50 |      100 |   16.66 |   54.54 | 24-25,39-49       
   Profile.tsx           |       0 |      100 |       0 |       0 | 4                 
-  VolunteerDisplay.tsx  |   32.25 |        0 |      25 |   33.33 | 39-69,99-141      
+  VolunteerDisplay.tsx  |   32.25 |        0 |      25 |   33.33 | 39-69,102-144     
  src/interfaces         |       0 |        0 |       0 |       0 |                   
   volunteers.ts         |       0 |        0 |       0 |       0 |                   
- src/pages              |       0 |      100 |       0 |       0 |                   
-  About.tsx             |       0 |      100 |       0 |       0 | 4                 
-  Home.tsx              |       0 |      100 |       0 |       0 | 4                 
+ src/pages              |     100 |      100 |     100 |     100 |                   
+  About.tsx             |     100 |      100 |     100 |     100 |                   
 ------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.125 s
+Time:        3.981 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
