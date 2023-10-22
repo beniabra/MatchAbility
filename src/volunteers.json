@@ -4,7 +4,7 @@
             "id": 100,
             "name":  "Alice Walker",
             "bio": "I love sunflowers.",
-            "disabilities": ["Dyslexia", "Colorblindness"],
+            "disabilities": ["Dyslexia", "Blindness"],
             "daysAvailable": ["Mon", "Tue", "Wed", "Thu", "Fri"],
             "availability": ["Evening"]
         },
@@ -20,7 +20,7 @@
             "id": 102,
             "name":  "Cathie Yang",
             "bio": "I am a software engineer with a passion for helping others.",
-            "disabilities": ["Dyslexia", "Colorblindness"],
+            "disabilities": ["Dyslexia", "Blindness"],
             "daysAvailable": ["Mon", "Wed", "Fri"],
             "availability": ["Morning", "Afternoon"]
         },
@@ -28,7 +28,7 @@
             "id": 103,
             "name": "Maria Rodriguez",
             "bio": "I'm a nurse with experience in emergency medicine.",
-            "disabilities": ["Hearing Impairment / Deafness"],
+            "disabilities": ["Hearing Impairment"],
             "daysAvailable": ["Tue", "Thu"],
             "availability": ["Morning"]
         },
@@ -44,7 +44,7 @@
             "id": 105,
             "name": "Linda Johnson",
             "bio": "I am a retired psychologist looking to give back to the community.",
-            "disabilities": ["Blind"],
+            "disabilities": ["Blindness"],
             "daysAvailable": ["Sat", "Sun"],
             "availability": ["Afternoon", "Morning", "Evening"]
         },
