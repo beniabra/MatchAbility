@@ -13,6 +13,7 @@ import {
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { VolunteerDisplay } from "./components/VolunteerDisplay"
 
 
 export const App = () => (
