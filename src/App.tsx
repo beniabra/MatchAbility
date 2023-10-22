@@ -13,6 +13,10 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Grid, GridItem } from '@chakra-ui/react'
+import { VolunteerDisplay } from "./components/VolunteerDisplay"
+import { MatchMakingForm } from "./components/MatchMakingForm"
+import { Home } from "./components/Home"
+import { Register } from "./components/Register"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -33,11 +37,16 @@ export const App = () => (
         </TabList>
         <TabPanels backgroundColor="white">
           <TabPanel>
-            <p>Match to a Volunteer</p>
-            <p>Become a Volunteer</p>
+            <Home></Home>
           </TabPanel>
           <TabPanel>
-            <p>Person</p>
+            <VolunteerDisplay></VolunteerDisplay>
+          </TabPanel>
+          <TabPanel>
+            <MatchMakingForm></MatchMakingForm>
+          </TabPanel>
+          <TabPanel>
+            <Register></Register>
           </TabPanel>
         </TabPanels>
       </Tabs>
