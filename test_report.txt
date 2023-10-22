@@ -73,7 +73,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (834 ms)
+  ✕ renders learn react link (627 ms)
 
   ● renders learn react link
 
@@ -87,11 +87,24 @@ FAIL src/App.test.tsx
         [36m<div[39m
           [33mclass[39m=[32m"css-57vgj"[39m
         [36m>[39m
-          [36m<b[39m
-            [33mclass[39m=[32m"chakra-text css-yl2kbz"[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"css-1vlk4q9"[39m
           [36m>[39m
-            [0mMatchAbility[0m
-          [36m</b>[39m
+            [36m<img[39m
+              [33malt[39m=[32m""[39m
+              [33msrc[39m=[32m"./images/MAlogo.png"[39m
+            [36m/>[39m
+            [36m<b[39m
+              [33mclass[39m=[32m"chakra-text css-yl2kbz"[39m
+            [36m>[39m
+              [0mMatchAbility[0m
+            [36m</b>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"chakra-text css-1bb6m29"[39m
+            [36m>[39m
+              [0mProfile[0m
+            [36m</p>[39m
+          [36m</div>[39m
           [36m<div[39m
             [33mclass[39m=[32m"chakra-tabs css-1xpribl"[39m
           [36m>[39m
@@ -111,7 +124,7 @@ FAIL src/App.test.tsx
                 [33mtabindex[39m=[32m"0"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
-                [0mForms[0m
+                [0mHome[0m
               [36m</button>[39m
               [36m<button[39m
                 [33maria-controls[39m=[32m"tabs-:r0:--tabpanel-1"[39m
@@ -126,9 +139,48 @@ FAIL src/App.test.tsx
               [36m>[39m
                 [0mOur Volunteers[0m
               [36m</button>[39m
+              [36m<button[39m
+                [33maria-controls[39m=[32m"tabs-:r0:--tabpanel-2"[39m
+                [33maria-disabled[39m=[32m"false"[39m
+                [33maria-selected[39m=[32m"false"[39m
+                [33mclass[39m=[32m"chakra-tabs__tab css-yf12il"[39m
+                [33mdata-index[39m=[32m"2"[39m
+                [33mid[39m=[32m"tabs-:r0:--tab-2"[39m
+                [33mrole[39m=[32m"tab"[39m
+                [33mtabindex[39m=[32m"-1"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mMatchMaking Form[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33maria-controls[39m=[32m"tabs-:r0:--tabpanel-3"[39m
+                [33maria-disabled[39m=[32m"false"[39m
+                [33maria-selected[39m=[32m"false"[39m
+                [33mclass[39m=[32m"chakra-tabs__tab css-yf12il"[39m
+                [33mdata-index[39m=[32m"3"[39m
+                [33mid[39m=[32m"tabs-:r0:--tab-3"[39m
+                [33mrole[39m=[32m"tab"[39m
+                [33mtabindex[39m=[32m"-1"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mRegister[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33maria-controls[39m=[32m"tabs-:r0:--tabpanel-4"[39m
+                [33maria-disabled[39m=[32m"false"[39m
+                [33maria-selected[39m=[32m"false"[39m
+                [33mclass[39m=[32m"chakra-tabs__tab css-yf12il"[39m
+                [33mdata-index[39m=[32m"4"[39m
+                [33mid[39m=[32m"tabs-:r0:--tab-4"[39m
+                [33mrole[39m=[32m"tab"[39m
+                [33mtabindex[39m=[32m"-1"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAbout[0m
+              [36m</button>[39m
             [36m</div>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"chakra-tabs__tab-panels css-8atqhb"[39m
+              [33mclass[39m=[32m"chakra-tabs__tab-panels css-at1bvb"[39m
             [36m>[39m
               [36m<div[39m
                 [33maria-labelledby[39m=[32m"tabs-:r0:--tab-0"[39m
@@ -196,56 +248,7 @@ FAIL src/App.test.tsx
                           [0mMatch me[0m
                         [36m</button>[39m
                       [36m</div>[39m
-                    [36m</div>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"chakra-card css-jv498s"[39m
-                    [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__header css-1sl53ol"[39m
-                      [36m>[39m
-                        [36m<h2[39m
-                          [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
-                        [36m>[39m
-                          [0mBenjamin Abraham[0m
-                        [36m</h2>[39m
-                      [36m</div>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__body css-1idwstw"[39m
-                      [36m>[39m
-                        [36m<p>[39m
-                          [0mReally into musical theater and helping the community[0m
-                        [36m</p>[39m
-                        [36m<p[39m
-                          [33mstyle[39m=[32m"align-self: left;"[39m
-                        [36m>[39m
-                          [0mI can help with: [0m
-                          [0mMobility[0m
-                        [36m</p>[39m
-                        [36m<p>[39m
-                          [0mDays Available: [0m
-                          [0mSat, Sun[0m
-                        [36m</p>[39m
-                        [36m<p>[39m
-                          [0mAvailability: [0m
-                          [0mMorning, Afternoon, Evening[0m
-                        [36m</p>[39m
-                      [36m</div>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
-                      [36m>[39m
-                        [36m<button[39m
-                          [33mclass[39m=[32m"chakra-button css-ez23ye"[39m
-                          [33mtype[39m=[32m"button"[39m
-                        [36m>[39m
-                          [0mMatch me[0m
-                        [36m</button>[39m
-                      [36m</div>[39m
-                    [36m</div>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"chakra-card css-jv498s"[39m
-                    [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__header css-1sl5...
+                ...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -292,7 +295,7 @@ All files               |   19.65 |        0 |   17.77 |   20.17 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.643 s
+Time:        4.1 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
