@@ -2,8 +2,78 @@
 > my-app@0.1.0 test
 > react-scripts test --coverage
 
+  console.error
+    Warning: Each child in a list should have a unique "key" prop.
+    
+    Check the render method of `VolunteerDisplay`. See https://reactjs.org/link/warning-keys for more information.
+        at Card2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/card/src/card.tsx:43:18)
+        at VolunteerDisplay (/home/runner/work/MatchAbility/MatchAbility/src/components/VolunteerDisplay.tsx:11:49)
+        at div
+        at /home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at TabPanel2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/tabs/src/tab-panel.tsx:17:22)
+        at div
+        at /home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at TabPanels2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/tabs/src/tab-panels.tsx:21:23)
+        at div
+        at /home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at Tabs2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/tabs/src/tabs.tsx:58:18)
+        at div
+        at /home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at EnvironmentProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/react-env/src/env.tsx:38:11)
+        at ColorModeProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/color-mode/src/color-mode-provider.tsx:33:5)
+        at ThemeProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:125:32)
+        at ThemeProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/system/src/providers.tsx:17:17)
+        at ChakraProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/provider/src/chakra-provider.tsx:77:5)
+        at ChakraProvider2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
+        at App
+        at EnvironmentProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/react-env/src/env.tsx:38:11)
+        at ColorModeProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/color-mode/src/color-mode-provider.tsx:33:5)
+        at ThemeProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:125:32)
+        at ThemeProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/system/src/providers.tsx:17:17)
+        at ChakraProvider (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/provider/src/chakra-provider.tsx:77:5)
+        at ChakraProvider2 (/home/runner/work/MatchAbility/MatchAbility/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
+        at AllProviders (/home/runner/work/MatchAbility/MatchAbility/src/test-utils.tsx:5:25)
+
+      19 |
+      20 |     return (
+    > 21 |         <SimpleGrid columns={4} spacing={10}>
+         |         ^
+      22 |             {volunteers.map(volunteer => (
+      23 |                 <Card>
+      24 |                     <Avatar name={ volunteer.name } src='https://bit.ly/broken-link' />
+
+      at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:87:30)
+      at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:61:7)
+      at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1078:5)
+      at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1105:11)
+      at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1276:11)
+      at VolunteerDisplay (src/components/VolunteerDisplay.tsx:21:9)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at customRender (src/test-utils.tsx:10:9)
+      at Object.<anonymous> (src/App.test.tsx:7:9)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
 FAIL src/App.test.tsx
-  ✕ renders learn react link (316 ms)
+  ✕ renders learn react link (664 ms)
 
   ● renders learn react link
 
@@ -119,12 +189,9 @@ FAIL src/App.test.tsx
                 [33mrole[39m=[32m"tabpanel"[39m
                 [33mtabindex[39m=[32m"0"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0mMatch to a Volunteer[0m
-                [36m</p>[39m
-                [36m<p>[39m
-                  [0mBecome a Volunteer[0m
-                [36m</p>[39m
+                [36m<div>[39m
+                  [0mHi[0m
+                [36m</div>[39m
               [36m</div>[39m
               [36m<div[39m
                 [33maria-labelledby[39m=[32m"tabs-:r0:--tab-1"[39m
@@ -134,115 +201,55 @@ FAIL src/App.test.tsx
                 [33mrole[39m=[32m"tabpanel"[39m
                 [33mtabindex[39m=[32m"0"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0mPerson[0m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-        [36m<span[39m
-          [33mhidden[39m=[32m""[39m
-          [33mid[39m=[32m"__chakra_env"[39m
-        [36m/>[39m
-        [36m<span[39m
-          [33mhidden[39m=[32m""[39m
-          [33mid[39m=[32m"__chakra_env"[39m
-        [36m/>[39m
-      [36m</div>[39m
-      [36m<div[39m
-        [33mclass[39m=[32m"chakra-portal"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-      [36m</div>[39m
-      [36m<div[39m
-        [33mclass[39m=[32m"chakra-portal"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"css-16zah1r"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"chakra-card css-jv498s"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"chakra-avatar css-1q6qhgs"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33maria-label[39m=[32m"Alice Walker"[39m
+                        [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
+                        [33mrole[39m=[32m"img"[39m
+                      [36m>[39m
+                        [0mAW[0m
+                      [36m</div>[39m
+                    [36m</span>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"chakra-card__header css-1sl53ol"[39m
+                    [36m>[39m
+                      [36m<h2[39m
+                        [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
+                      [36m>[39m
+                        [0m [0m
+                        [0mAlice Walker[0m
+                      [36m</h2>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"chakra-card__body css-1idwstw"[39m
+                    [36m>[39m
+                      [36m<p>[39m
+                        [0mI love sunflowers.[0m
+                      [36m</p>[39m
+                      [36m<p[39m
+                        [33mstyle[39m=[32m"align-self: left;"[39m
+                      [36m>[39m
+                        [0mI can help with: [0m
+                        [0mdyslexia, colorblindness[0m
+                      [36m</p>[39m
+                      [36m<p>[39m
+                        [0mAvailability: [0m
+                        [0mMon-Fri anytime[0m
+                      [36m</p>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mc...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -265,7 +272,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |    6.38 |        0 |     8.1 |    6.52 |                   
+All files               |   19.14 |        0 |   21.62 |   19.56 |                   
  src                    |    8.57 |        0 |   13.04 |    8.69 |                   
   App.tsx               |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
@@ -274,12 +281,12 @@ All files               |    6.38 |        0 |     8.1 |    6.52 |
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/components         |       0 |        0 |       0 |       0 |                   
-  Home.tsx              |       0 |      100 |       0 |       0 | 4                 
-  MatchMakingForm.tsx   |       0 |      100 |       0 |       0 | 9-42              
+ src/components         |   54.54 |        0 |   41.66 |   57.14 |                   
+  Home.tsx              |     100 |      100 |     100 |     100 |                   
+  MatchMakingForm.tsx   |      50 |      100 |   16.66 |   54.54 | 23-24,34-43       
   Profile.tsx           |       0 |      100 |       0 |       0 | 4                 
-  Register.tsx          |       0 |      100 |       0 |       0 | 4                 
-  VolunteerDisplay.tsx  |       0 |        0 |       0 |       0 | 8-23              
+  Register.tsx          |     100 |      100 |     100 |     100 |                   
+  VolunteerDisplay.tsx  |   57.14 |        0 |   66.66 |   57.14 | 14-16             
  src/interfaces         |       0 |        0 |       0 |       0 |                   
   volunteers.ts         |       0 |        0 |       0 |       0 |                   
  src/pages              |       0 |      100 |       0 |       0 |                   
@@ -289,7 +296,7 @@ All files               |    6.38 |        0 |     8.1 |    6.52 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.37 s
+Time:        4.839 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
