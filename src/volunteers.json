@@ -5,7 +5,7 @@
             "name":  "Alice Walker",
             "bio": "I love sunflowers.",
             "disabilities": ["Dyslexia", "Colorblindness"],
-            "days available": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+            "daysAvailable": ["Mon", "Tue", "Wed", "Thu", "Fri"],
             "availability": ["Evening"]
         },
         {
@@ -13,7 +13,7 @@
             "name":  "Benjamin Abraham",
             "bio": "Really into musical theater and helping the community",
             "disabilities": ["Mobility"],
-            "days available": ["Sat", "Sun"],
+            "daysAvailable": ["Sat", "Sun"],
             "availability": ["Morning", "Afternoon", "Evening"]
         },
         {
@@ -21,7 +21,7 @@
             "name":  "Cathie Yang",
             "bio": "I am a software engineer with a passion for helping others.",
             "disabilities": ["Dyslexia", "Colorblindness"],
-            "days available": ["Mon", "Wed", "Fri"],
+            "daysAvailable": ["Mon", "Wed", "Fri"],
             "availability": ["Morning", "Afternoon"]
         },
         {
@@ -29,7 +29,7 @@
             "name": "Maria Rodriguez",
             "bio": "I'm a nurse with experience in emergency medicine.",
             "disabilities": ["Hearing Impairment / Deafness"],
-            "days available": ["Tue", "Thu"],
+            "daysAvailable": ["Tue", "Thu"],
             "availability": ["Morning"]
         },
         {
@@ -37,7 +37,7 @@
             "name": "Ahmed Khan",
             "bio": "I am a teacher and enjoy working with children.",
             "disabilities": ["Mobility"],
-            "days available": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+            "daysAvailable": ["Mon", "Tue", "Wed", "Thu", "Fri"],
             "availability": ["Afternoon", "Evening"]
         },
         {
@@ -45,7 +45,7 @@
             "name": "Linda Johnson",
             "bio": "I am a retired psychologist looking to give back to the community.",
             "disabilities": ["Blind"],
-            "days available": ["Sat", "Sun"],
+            "daysAvailable": ["Sat", "Sun"],
             "availability": ["Afternoon", "Morning", "Evening"]
         },
         {
@@ -53,7 +53,7 @@
             "name": "Carlos Gomez",
             "bio": "I am a graphic designer who enjoys creative projects.",
             "disabilities": ["Dyslexia"],
-            "days available": ["Fri","Sat", "Sun"],
+            "daysAvailable": ["Fri","Sat", "Sun"],
             "availability": ["Morning"]
         }
         
