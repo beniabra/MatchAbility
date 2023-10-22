@@ -13,6 +13,7 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
+
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl" backgroundColor="#E07A5F">
