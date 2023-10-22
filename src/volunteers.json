@@ -1,0 +1,11 @@
+{
+    "VOLUNTEERS" : [
+        {
+            "name":  "Alice Walker",
+            "bio": "I love sunflowers.",
+            "disabilities": ["dyslexia", "colorblindness"],
+            "availability": "Mon-Fri anytime"
+        }
+
+    ]
+}
