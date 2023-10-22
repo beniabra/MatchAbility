@@ -75,7 +75,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (607 ms)
+  ✕ renders learn react link (679 ms)
 
   ● renders learn react link
 
@@ -179,78 +179,55 @@ FAIL src/App.test.tsx
                 [33mrole[39m=[32m"tabpanel"[39m
                 [33mtabindex[39m=[32m"0"[39m
               [36m>[39m
-                [36m<div>[39m
-                  [0mHi[0m
-                [36m</div>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33maria-labelledby[39m=[32m"tabs-:r0:--tab-1"[39m
-                [33mclass[39m=[32m"chakra-tabs__tab-panel css-a5mhaz"[39m
-                [33mhidden[39m=[32m""[39m
-                [33mid[39m=[32m"tabs-:r0:--tabpanel-1"[39m
-                [33mrole[39m=[32m"tabpanel"[39m
-                [33mtabindex[39m=[32m"0"[39m
-              [36m>[39m
-                [36m<div>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"margin: 30px;"[39m
+                [36m>[39m
+                  [36m<h1>[39m
+                    [36m<b>[39m
+                      [0mWelcome to Matchability, our Volunteer Matching Service[0m
+                    [36m</b>[39m
+                  [36m</h1>[39m
+                  [36m<p>[39m
+                    [0mFind volunteers who can help with disabilities.[0m
+                  [36m</p>[39m
+                  [36m<br />[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"css-16zah1r"[39m
+                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: rgb(245, 245, 245);"[39m
                   [36m>[39m
-                    [36m<div[39m
-                      [33mclass[39m=[32m"chakra-card css-jv498s"[39m
+                    [36m<h2[39m
+                      [33mstyle[39m=[32m"font-size: 1.5rem; color: rgb(51, 51, 51);"[39m
                     [36m>[39m
-                      [36m<span[39m
-                        [33mclass[39m=[32m"chakra-avatar css-1q6qhgs"[39m
-                      [36m>[39m
-                        [36m<div[39m
-                          [33maria-label[39m=[32m"Alice Walker"[39m
-                          [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
-                          [33mrole[39m=[32m"img"[39m
-                        [36m>[39m
-                          [0mAW[0m
-                        [36m</div>[39m
-                      [36m</span>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__header css-1sl53ol"[39m
-                      [36m>[39m
-                        [36m<h2[39m
-                          [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
-                        [36m>[39m
-                          [0mAlice Walker[0m
-                        [36m</h2>[39m
-                      [36m</div>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__body css-1idwstw"[39m
-                      [36m>[39m
-                        [36m<p>[39m
-                          [0mI love sunflowers.[0m
-                        [36m</p>[39m
-                        [36m<p>[39m
-                          [0mI can help with: [0m
-                          [36m<span[39m
-                            [33mclass[39m=[32m"css-1eveppl"[39m
-                          [36m>[39m
-                            [0mDyslexia[0m
-                          [36m</span>[39m
-                          [36m<span[39m
-                            [33mclass[39m=[32m"css-1eveppl"[39m
-                          [36m>[39m
-                            [0mBlindness[0m
-                          [36m</span>[39m
-                        [36m</p>[39m
-                        [36m<p>[39m
-                          [0mDays Available: [0m
-                          [0mMon, Tue, Wed, Thu, Fri[0m
-                        [36m</p>[39m
-                        [36m<p>[39m
-                          [0mAvailability: [0m
-                          [0mEvening[0m
-                        [36m</p>[39m
-                      [36m</div>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
-                      [36m>[39m
-                        [36m<button[39m
-                          [33mclass[39m=[32m"chakra-butto...
+                      [0mVisual Impairments[0m
+                    [36m</h2>[39m
+                    [36m<p[39m
+                      [33mstyle[39m=[32m"font-size: 1rem; color: rgb(85, 85, 85); line-height: 1.4;"[39m
+                    [36m>[39m
+                      [0mVisual impairments encompass a range of conditions that affect a person's vision. These conditions can vary from mild to severe and can include blindness, low vision, and color blindness. People with visual impairments often use tools like braille, screen readers, and white canes to navigate and access information. It's essential to provide accessible content and environments to accommodate their needs.[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: rgb(245, 245, 245);"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mstyle[39m=[32m"font-size: 1.5rem; color: rgb(51, 51, 51);"[39m
+                    [36m>[39m
+                      [0mHearing Impairments[0m
+                    [36m</h2>[39m
+                    [36m<p[39m
+                      [33mstyle[39m=[32m"font-size: 1rem; color: rgb(85, 85, 85); line-height: 1.4;"[39m
+                    [36m>[39m
+                      [0mHearing impairments involve difficulties with hearing or complete deafness. Individuals with hearing impairments may communicate using sign language, lip-reading, or hearing aids. Providing closed captions, sign language interpreters, and assistive listening systems can make information and events more accessible to the Deaf and hard of hearing community.[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mstyle[39m=[32m"border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: rgb(245, 245, 245);"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mstyle[39m=[32m"font-size: 1.5rem; color: rgb(51, 51, 51);"[39m
+                    [36m>[39m
+                      [0mMobility Impairments[0m
+                    [36m</h2>[39m
+                    [36...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -273,7 +250,7 @@ FAIL src/App.test.tsx
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   19.65 |        0 |   17.77 |   20.17 |                   
+All files               |   21.66 |        0 |   17.77 |   22.22 |                   
  src                    |    8.57 |        0 |   13.04 |    8.69 |                   
   App.tsx               |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
@@ -282,7 +259,7 @@ All files               |   19.65 |        0 |   17.77 |   20.17 |
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- src/components         |   37.77 |        0 |      25 |   39.53 |                   
+ src/components         |   41.66 |        0 |      25 |   43.47 |                   
   Home.tsx              |     100 |      100 |     100 |     100 |                   
   MatchMakingForm.tsx   |      50 |      100 |   16.66 |   54.54 | 24-25,39-49       
   Profile.tsx           |       0 |      100 |       0 |       0 | 4                 
@@ -296,7 +273,7 @@ All files               |   19.65 |        0 |   17.77 |   20.17 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.608 s
+Time:        4.125 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
