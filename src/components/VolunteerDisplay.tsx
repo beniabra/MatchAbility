@@ -30,7 +30,7 @@ export function VolunteerDisplay(): JSX.Element {
   const [name, setName] = useState("");
   const [bio, setBio] = useState("");
   const [disabilities, setDisabilities] = useState<string[]>([]);
-  const [availability, setAvailability] = useState("");
+  const [availability, setAvailability] = useState<string[]>([]);
   const [daysAvailable, setDaysAvailable] = useState<string[]>([]);
 
   function generateId(): number {
@@ -56,15 +56,15 @@ export function VolunteerDisplay(): JSX.Element {
           name,
           bio,
           disabilities,
-          availability,
-          daysAvailable  // <- Add this line
+          availability,  // No changes here since it's already an array
+          daysAvailable
         };
         addNewVolunteer(volunteerData);
         setName("");
         setBio("");
         setDisabilities([]);
-        setAvailability("");
-        setDaysAvailable([]);  // <- Reset the daysAvailable
+        setAvailability([]);  // Reset the availability array
+        setDaysAvailable([]);  
     }
 
   return (
@@ -81,8 +81,8 @@ export function VolunteerDisplay(): JSX.Element {
               <p style={{ alignSelf: "left" }}>
                 I can help with: {volunteer.disabilities.join(", ")}
               </p>
-              <p>Availability: {volunteer.availability}</p>
               <p>Days Available: {volunteer.daysAvailable.join(", ")}</p>
+              <p>Availability: {volunteer.availability.join(", ")}</p>
             </CardBody>
             <CardFooter>
               <Button>Match me</Button>
@@ -133,12 +133,15 @@ export function VolunteerDisplay(): JSX.Element {
         </FormControl>
 
         <FormControl>
-          <FormLabel>Times they are available:</FormLabel>
-          <Select value={availability} onChange={(e) => setAvailability(e.target.value)}>
-            <option value="morning">Morning</option>
-            <option value="afternoon">Afternoon</option>
-            <option value="evening">Evening</option>
-          </Select>
+            <FormLabel>Times they are available:</FormLabel>
+            <CheckboxGroup
+                value={availability}
+                onChange={(values) => setAvailability(values as string[])}
+            >
+                <Checkbox value="Morning">Morning</Checkbox>
+                <Checkbox value="Afternoon">Afternoon</Checkbox>
+                <Checkbox value="Evening">Evening</Checkbox>
+            </CheckboxGroup>
         </FormControl>
 
         <Button type="submit">Register</Button>
